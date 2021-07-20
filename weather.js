@@ -5,7 +5,8 @@ var desc= document.querySelector('.desc')
 var temp= document.querySelector('.temp')
 
 button.addEventListener('click', function (){
-  fetch('https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}')
+  fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&
+  appid=771f4017d6098f3a2d947ab695755dca')
   .then(response => response.json())
   .then(data => console.log(data))
 
