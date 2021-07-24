@@ -1,4 +1,4 @@
-var button= document.querySelector('.button')
+var button= document.querySelector('.btn-search')
 var inputValue= document.querySelector('.inputvalue')
 var name= document.querySelector('.name')
 var desc= document.querySelector('.desc')
@@ -32,7 +32,7 @@ const displayWeather= function(data) {
 const search= function (){
   (document.querySelector(".inputvalue").value);
   }
-document.querySelector(".button").addEventListener("click", function() {
+document.querySelector(".btn-search").addEventListener("click", function() {
   search();
 });
 
@@ -53,6 +53,6 @@ button.onClick = function (){
 
 for (let i = 0; i < localStorage.length; i++) {
   const key = localStorage.key(i);
-  const value = localStorage.getItem(key);
+const value = localStorage.getItem(key);
   history.innerHTML += `${key}: ${value}<br />`
 }

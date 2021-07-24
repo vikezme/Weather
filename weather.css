@@ -43,7 +43,8 @@ input[type="text"]{
   margin-left: 10px;
   padding-left: 10px;
 }
-.button{
+
+.btn-search{
 background-color: orange;
 font-style: : bold;
 font-family: georgia, arial;
