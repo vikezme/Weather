@@ -10,6 +10,7 @@ button.addEventListener('click', function (){
   .then(data => this.displayWeather(data))
 
   .catch(err => alert("Wrong City Name"))
+  console.log("Wrong city name");
 })
 
 
@@ -28,16 +29,15 @@ const displayWeather= function(data) {
   document.querySelector(".weather").classList.remove("loading");
 };
 
-  const search= function (){
-    this.fetchWeather(document.querySelector(".inputvalue").value);
-  }
+//  const search= function (){
+//    this.fetchWeather(document.querySelector(".inputvalue").value);
+  //}
 
-document.querySelector(".button").addEventListener("click", function() {
-  search();
-});
-document.querySelector(".inputvalue").addEventListener("keyup", function (event){
-  if(event.key == "Enter"){
-    weather.search();
-  }
-})
-.fetchWeather("Adelaide");
+//document.querySelector(".button").addEventListener("click", function() {
+//  search();
+//});
+//document.querySelector(".inputvalue").addEventListener("keyup", function (event){
+  //if(event.key == "Enter"){
+  //  search();
+  //}
+//})
