@@ -35,3 +35,21 @@ const search= function (){
 document.querySelector(".button").addEventListener("click", function() {
   search();
 });
+
+
+
+const history = document.getElementById("history")
+
+button.onClick = function (){
+  const value = inputvalue.value;
+  console.log(value);
+  if(value){
+    localStorage.setItem(value);
+    location.reload();
+  }
+};
+
+for (let i = 0; i < localStorage.length; i++) {
+  const value = localStorage.getItem(value);
+  history.innerHTML += `${value}<br />`
+}
