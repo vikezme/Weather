@@ -21,24 +21,17 @@ const displayWeather= function(data) {
   const { temp, humidity } = data.main;
   const { speed } = data.wind;
   console.log(name, icon, description, temp, humidity, speed);
-  document.querySelector(".city").innerText = "Weather in" + name;
-  document.querySelector(".icon").src ="http://openweathermap.org/img/wn/" + icon + "01n@2x.png"
+  document.querySelector(".city").innerText = name;
+  document.querySelector(".icon").src ="http://openweathermap.org/img/wn/01n@2x.png"
   document.querySelector(".description").innerText = description;
   document.querySelector(".temp").innerText = temp + "°C";
   document.querySelector(".humidity").innerText = "Humidity:" + humidity + "%";
   document.querySelector(".wind").innerText = "Wind Speed:" + speed + "km/h";
   document.querySelector(".weather").classList.remove("loading");
 };
-
-//  const search= function (){
-//    this.fetchWeather(document.querySelector(".inputvalue").value);
-  //}
-
-//document.querySelector(".button").addEventListener("click", function() {
-//  search();
-//});
-//document.querySelector(".inputvalue").addEventListener("keyup", function (event){
-  //if(event.key == "Enter"){
-  //  search();
-  //}
-//})
+const search= function (){
+  (document.querySelector(".inputvalue").value);
+  }
+document.querySelector(".button").addEventListener("click", function() {
+  search();
+});
