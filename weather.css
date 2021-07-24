@@ -3,10 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: gray;
+}
+
 header{
-  font-family: georgia, arial, sans-serif;
+  font-family: broadway, georgia, arial, sans-serif;
   text-align: center;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: bold;
   background-color: blue;
   color: white;
@@ -23,6 +27,7 @@ h2{
 }
 .input{
   text-align: left;
+  display: inline-block;
 
 }
 input[type="text"]{
@@ -46,4 +51,81 @@ height: 50px;
 width: 100px;
 border-radius: 20px;
 border: none;
+}
+.button:hover{
+  cursor: pointer;
+  background-color: lightgreen;
+}
+.weather_container{
+  border: black solid 2px;
+  float: right;
+  height: 400px;
+  width: 800px;
+  margin-right: 30px;
+
+
+}
+.history{
+  width: 300px;
+  height: 400px;
+  border: black solid 2px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  display: inline-block;
+}
+
+h4{
+  background-color: blue;
+  color: white;
+  text-decoration: underline;
+}
+.item1, .item2, .item3,
+.item4, .item5 {
+  height: 250px;
+  width: 165px;
+  border: black solid 2px;
+  float: right;
+  padding: 10px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+}
+h3{
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: georia, arial;
+  text-decoration: underline;
+  background-color: blue;
+  color: white;
+
+}
+.weather{
+  margin-left: 10px;
+  margin-top: 20px;
+  font-family: georgia, arial;
+  font-size: 20px;
+  padding:20px;
+}
+.city{
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  display: inline-block;
+  text-decoration: underline;
+  padding-right: 10px;
+
+}
+.weather.loading{
+  visibility: hidden;
+}
+.weather.loading:after{
+  visibility: visible;
+  content: Loading...;
 }
