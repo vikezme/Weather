@@ -13,7 +13,7 @@ button.addEventListener('click', function (){
 })
 
 
-displayWeather: function(data) {
+const displayWeather= function(data) {
   const { name } = data;
   const { icon, description } = data.weather[0];
   const { temp, humidity } = data.main;
@@ -25,17 +25,19 @@ displayWeather: function(data) {
   document.querySelector(".temp").innerText = temp + "°C";
   document.querySelector(".humidity").innerText = "Humidity:" + humidity + "%";
   document.querySelector(".wind").innerText = "Wind Speed:" + speed + "km/h";
+  document.querySelector(".weather").classList.remove("loading");
 };
 
-  search: function (){
-    this.fetchWeather(document.querySelector(".inputValue").value);
+  const search= function (){
+    this.fetchWeather(document.querySelector(".inputvalue").value);
   }
 
 document.querySelector(".button").addEventListener("click", function() {
-  weather.search();
+  search();
 });
-document.querySelector(".inputValue").addEventListener("keyup", function (event){
+document.querySelector(".inputvalue").addEventListener("keyup", function (event){
   if(event.key == "Enter"){
     weather.search();
   }
 })
+.fetchWeather("Adelaide");
