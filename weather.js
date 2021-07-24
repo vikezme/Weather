@@ -10,7 +10,8 @@ button.addEventListener('click', function (){
   .then(data => this.displayWeather(data))
 
   .catch(err => alert("Wrong City Name"))
-  console.log("Wrong city name");
+
+  console.log(alert);
 })
 
 
