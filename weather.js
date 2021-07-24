@@ -41,15 +41,18 @@ document.querySelector(".button").addEventListener("click", function() {
 const history = document.getElementById("history")
 
 button.onClick = function (){
+  const key = history.value;
   const value = inputvalue.value;
+  console.log(key);
   console.log(value);
-  if(value){
-    localStorage.setItem(value);
+  if(key && value){
+    localStorage.setItem(key, value);
     location.reload();
   }
 };
 
 for (let i = 0; i < localStorage.length; i++) {
-  const value = localStorage.getItem(value);
-  history.innerHTML += `${value}<br />`
+  const key = localStorage.key(i);
+  const value = localStorage.getItem(key);
+  history.innerHTML += `${key}: ${value}<br />`
 }
