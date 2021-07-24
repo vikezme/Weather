@@ -7,11 +7,11 @@ var temp= document.querySelector('.temp')
 button.addEventListener('click', function (){
   fetch('http://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&appid=771f4017d6098f3a2d947ab695755dca')
   .then(response => response.json())
-  .then(data => this.displayWeather(data))
+  .then(data => displayWeather(data))
 
   .catch(err => alert("Wrong City Name"))
 
-  console.log(alert);
+  console.log();
 })
 
 
