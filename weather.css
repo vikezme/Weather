@@ -100,9 +100,6 @@ h3{
   text-decoration: underline;
   background-color: blue;
   color: white;
-
-
-
 }
 .weather{
   margin-left: 10px;
@@ -119,7 +116,6 @@ h3{
   display: inline-block;
   text-decoration: underline;
   padding-right: 10px;
-
 }
 .weather.loading{
   visibility: hidden;
@@ -128,8 +124,6 @@ h3{
   visibility: visible;
   content: Loading...;
 }
-
-
 .forecast {
   border: 3px solid black
 }
@@ -155,17 +149,33 @@ h3{
   #history{
     display: block;
     width: 100%;
+    font-size: 15px;
+    font-family: arial;
   }
   .weather_container{
     float: center;
     width: 700px;
+    font-size: 15px;
+    font-family: arial;
+  }
+  h3{
+    display: inline-block;
+    background-color: cyan;
+    font-family: arial;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 468px;){
   #history{
     display: block;
+    font-size: 10px;
+    font-family: arial;
+
   }
   h3{
     display: inline-block;
+    background-color: cyan;
+    font-family: arial;
+    font-size: 10px;
   }
 }
