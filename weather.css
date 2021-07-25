@@ -150,13 +150,22 @@ h3{
   border-radius: 30px;
 }
 
-@media (max-width: 1145px;){
+@media screen and (max-width: 768px;){
 
-  .history{
+  #history{
     display: block;
+    width: 100%;
   }
   .weather_container{
     float: center;
     width: 700px;
+  }
+}
+@media screen and (max-width: 468px;){
+  #history{
+    display: block;
+  }
+  h3{
+    display: inline-block;
   }
 }
