@@ -13,7 +13,7 @@ header{
   text-align: center;
   font-size: 40px;
   font-weight: bold;
-  background-color: blue;
+  background-color: #23B0DA;
   color: white;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -25,6 +25,7 @@ h2{
   font-size: 20px;
   font-family: broadway, georgia, arial;
   margin-bottom: 10px;
+  margin-left: 60px;
 }
 .input{
   text-align: left;
@@ -32,15 +33,16 @@ h2{
 }
 input[type="text"]{
   height: 50px;
-  width: 300px;
+  width: 400px;
   background-color: lightgray;
   font-size: 20px;
   font-style: bold;
   font-family: georgia,sans-serif, arial;
   border: none;
   border-radius: 20px;
-  margin-left: 10px;
+  margin-left: 60px;
   padding-left: 10px;
+
 }
 
 .btn-search{
@@ -61,33 +63,49 @@ border: none;
   border: black solid 2px;
   float: right;
   height: 400px;
-  width: 800px;
-  margin-right: 30px;
+  width: 600px;
+  margin-right:100px;
+  margin-top: 10px;
   border-radius: 30px;
+  font-weight: bold;
+  text-align: center;
 }
 .wrapper{
 display: inline-block;
 }
 #history{
-  width: 300px;
+  width: 500px;
   height: 400px;
   border: black solid 2px;
   text-align: center;
   font-size: 20px;
   font-family: broadway, arial;
   font-weight: bold;
+  text-decoration: underline;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 60px;
   padding: 10px;
   display: inline-block;
   border-radius: 30px;
 }
 
 legend{
-  background-color: blue;
+  background-color: #23B0DA;
   color: white;
   text-decoration: underline;
   font-family: broadway, georgia, arial;
+  padding: 10px;
+}
+h5{
+  background-color: #23B0DA;
+  color: white;
+  text-decoration: underline;
+  font-family: broadway, georgia, arial;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 h3{
@@ -98,8 +116,10 @@ h3{
   font-weight: bold;
   font-family: broadway,georia, arial;
   text-decoration: underline;
-  background-color: blue;
+  background-color: #23B0DA;
   color: white;
+
+
 }
 .weather{
   margin-left: 10px;
@@ -109,7 +129,7 @@ h3{
   padding:20px;
 }
 .city{
-  background-color: blue;
+  background-color: #23B0DA;
   color: white;
   font-weight: bold;
   font-size: 30px;
@@ -144,7 +164,7 @@ h3{
   border-radius: 30px;
 }
 
-@media screen and (max-width: 768px;){
+@media screen and (max-width: 768px){
 
   #history{
     display: block;
@@ -153,7 +173,7 @@ h3{
     font-family: arial;
   }
   .weather_container{
-    float: center;
+    float: left;
     width: 700px;
     font-size: 15px;
     font-family: arial;
@@ -164,8 +184,14 @@ h3{
     font-family: arial;
     font-size: 15px;
   }
+  #item1, #item2,
+  #item3, #item4,
+  #item5 {
+    display: flex;
+  }
+
 }
-@media screen and (max-width: 468px;){
+@media screen and (max-width: 468px){
   #history{
     display: block;
     font-size: 10px;
@@ -177,5 +203,11 @@ h3{
     background-color: cyan;
     font-family: arial;
     font-size: 10px;
+  }
+  #item1, #item2,
+  #item3, #item4,
+  #item5 {
+    display: flex;
+    flex-direction: row;
   }
 }
