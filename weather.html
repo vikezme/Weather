@@ -7,48 +7,82 @@
   </head>
   <header> Weather Dashboard </header>
   <body>
-
     <div class="input"> <h2> Search a City </h2>
        <input type="text" class="inputvalue" placeholder="Enter a City">
           <input type="submit" value="Search" class="btn-search">
-        	</div>
+        	 </div>
+            <div class="display">
+              <h1 class="name"> </h1>
+                <p class="desk"> </p>
+                  <p class="tempr"> </p>
+            </div>
+                      <div class="wrapper">
+                        <div id="history"><legend>Searched Cities </legend></div></div>
+                          <div class="weather_container">
+                            <div id="mainitem" class="weather loading">
+                              <div class="date"></div>
+                                <h2 class="city"> Adelaide </h2>
+                                  <div class="temp"> 21°C </div>
+                                    <img src="" alt="" class="icon"/>
+                                      <div class="description">Cloudy</div>
+                                        <div class="humidity">Humidity 60%</div>
+                                          <div class="wind">Wind Speed: 6.2 km/h</div>
+                            </div>
+                        </div>
 
-    <div class="display">
-      <h1 class="name"> </h1>
-      <p class="desk"> </p>
-      <p class="tempr"> </p>
-
-    </div>
-
-    <div class="wrapper">
-         <div id="history"><legend>Searched History </legend></div></div>
-
-
-
-    <div class="weather_container">
-      <div class="weather loading">
-          <h2 class="city"> Adelaide </h2>
-          <div class="temp"> 21°C </div>
-          <img src="" alt="" class="icon"/>
-          <div class="description">Cloudy</div>
-          <div class="humidity">Humidity 60%</div>
-          <div class="wind">Wind Speed: 6.2 km/h</div>
-          </div>
-      </div>
-
-
-
-    <div class="future-forecast">
+  <div class="future-forecast">
       <h3>5 Days Forecasts: </h3>
-      <div class="monday">
+
+        <div id="item1" class="forecast">
+          <div class="date"></div>
+            <h2 class="city"></h2>
+              <div class="temp"></div>
+                <img src="" alt="" class="icon"/>
+                  <div class="description"></div>
+                    <div class="humidity"></div>
+                      <div class="wind"></div>
+          </div>
+                            <div id="item2" class="forecast">
+                                <div class="date"></div>
+                                  <h2 class="city"></h2>
+                                    <div class="temp"></div>
+                                      <img src="" alt="" class="icon"/>
+                                        <div class="description"></div>
+                                          <div class="humidity"></div>
+                                            <div class="wind"></div>
+                            </div>
+
+      <div id="item3" class="forecast">
+        <div class="date"></div>
+          <h2 class="city"></h2>
+            <div class="temp"></div>
+              <img src="" alt="" class="icon"/>
+                <div class="description"></div>
+                  <div class="humidity"></div>
+                    <div class="wind"></div>
+      </div>
+
+      <div id="item4" class="forecast">
+          <div class="date"></div>
+            <h2 class="city"></h2>
+              <div class="temp"></div>
+                <img src="" alt="" class="icon"/>
+                  <div class="description"></div>
+                    <div class="humidity"></div>
+                      <div class="wind"></div>
+      </div>
+
+      <div id="item5" class="forecast">
+        <div class="date"></div>
+          <h2 class="city"></h2>
+            <div class="temp"></div>
+              <img src="" alt="" class="icon"/>
+                <div class="description"></div>
+                  <div class="humidity"></div>
+                    <div class="wind"></div>
+                  </div>
 
       </div>
-      <div class="item2"></div>
-      <div class="item3"></div>
-      <div class="item4"></div>
-      <div class="item5"></div>
-
-    </div>
     <script src="weather.js"></script>
   </body>
 </html>
