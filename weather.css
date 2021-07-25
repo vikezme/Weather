@@ -9,12 +9,12 @@ body{
 }
 
 header{
-  font-family: wide latin, broadway, georgia, arial, sans-serif;
+  font-family: wide latin, georgia, arial, sans-serif;
   text-align: center;
   font-size: 40px;
   font-weight: bold;
-  background-color: #23B0DA;
-  color: white;
+  background-color: orange;
+  color: black;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
@@ -47,7 +47,7 @@ input[type="text"]{
 
 .btn-search{
 background-color: orange;
-font-style: : bold;
+font-style: bold;
 font-family: broadway, georgia, arial;
 font-size: 20px;
 height: 50px;
@@ -90,15 +90,15 @@ display: inline-block;
 }
 
 legend{
-  background-color: #23B0DA;
-  color: white;
+  background-color: orange;
+  color: black;
   text-decoration: underline;
   font-family: broadway, georgia, arial;
   padding: 10px;
 }
 h5{
-  background-color: #23B0DA;
-  color: white;
+  background-color: orange;
+  color: black;
   text-decoration: underline;
   font-family: broadway, georgia, arial;
   margin-top: 10px;
@@ -116,8 +116,8 @@ h3{
   font-weight: bold;
   font-family: broadway,georia, arial;
   text-decoration: underline;
-  background-color: #23B0DA;
-  color: white;
+  background-color: orange;
+  color: black;
 
 
 }
@@ -129,8 +129,8 @@ h3{
   padding:20px;
 }
 .city{
-  background-color: #23B0DA;
-  color: white;
+  background-color: orange;
+  color: black;
   font-weight: bold;
   font-size: 30px;
   display: inline-block;
@@ -142,7 +142,7 @@ h3{
 }
 .weather.loading:after{
   visibility: visible;
-  content: Loading...;
+
 }
 .forecast {
   border: 3px solid black
@@ -162,6 +162,7 @@ h3{
   display: inline-block;
   width: 200px;
   border-radius: 30px;
+  
 }
 
 @media screen and (max-width: 768px){
