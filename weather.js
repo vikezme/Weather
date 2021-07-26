@@ -16,9 +16,6 @@ button.addEventListener('click', function (){
   .then(response => response.json())
   .then(data => displayForecast(data))
 
-//  .catch(err => alert("Wrong City Name"))
-
-
   console.log();
 })
 
@@ -33,6 +30,7 @@ function showWeather(ref, data) {
   ref.querySelector(".date").innerText = (new Date(data.dt*1000)).toDateString();
   ref.querySelector(".icon").src ="http://openweathermap.org/img/wn/"+icon+"@2x.png"
 }
+
 
 const displayWeather= function(data) {
   const { name } = data;
@@ -50,7 +48,7 @@ const displayWeather= function(data) {
 
 
   const displayForecast= function(data) {
-  
+
     for(var i = 0; i < 5; ++i) {
       showWeather(document.querySelector("#item"+(i+1)), data.list[i*8+7]);
     }
