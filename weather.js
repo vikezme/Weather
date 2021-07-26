@@ -64,14 +64,21 @@ document.querySelector(".btn-search").addEventListener("click", function() {
   search();
 });
 
-let cities = localStorage.getItem ("cities");
-document.querySelector('.inputvalue').innerHTML= cities;
 
-const history = document.getElementById("history");
-const inputvalue = document.getElementById("inputvalue");
-const btn-search = document.getElementById("btn-search");
 
-btn-search.onClick = function () {
-  const value = inputvalue.value;
-  console.log(value);
-}
+// const history = document.getElementById("history");
+// const inputvalue = document.getElementById("inputvalue");
+// const btnsearch = document.getElementById("btn-search");
+//
+// btnsearch.onclick = function () {
+//   const value = inputvalue.value;
+//   console.log(value);
+//
+//   if (value) {
+//     localStorage.setItem(value);
+//     location.reload();
+//   }
+// };
+// for (var i = 0; i < localStorage.length; i++) {
+//   const value = localStorage.getItem(value);
+// }
