@@ -13,8 +13,8 @@ header{
   text-align: center;
   font-size: 40px;
   font-weight: bold;
-  background-color: yellow;
-  color: black;
+  background-color: blue;
+  color: white;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
@@ -47,7 +47,8 @@ input[type="text"]{
 }
 
 .btn-search{
-background-color: yellow;
+background-color: blue;
+color: white;
 font-style: bold;
 font-family: broadway, georgia, arial;
 font-size: 20px;
@@ -59,7 +60,7 @@ border: none;
 
 .btn-search:hover{
   cursor: pointer;
-  background-color: lightgreen;
+  background-color: orange;
 }
 
 .weather_container{
@@ -96,16 +97,16 @@ display: inline-block;
 }
 
 legend{
-  background-color: yellow;
-  color: black;
+  background-color: blue;
+  color: white;
   text-decoration: underline;
   font-family: broadway, georgia, arial;
   padding: 10px;
 }
 
 h5{
-  background-color: yellow;
-  color: black;
+  background-color: blue;
+  color: white;
   text-decoration: underline;
   font-family: broadway, georgia, arial;
   margin-top: 10px;
@@ -123,8 +124,8 @@ h3{
   font-weight: bold;
   font-family: broadway,georia, arial;
   text-decoration: underline;
-  background-color: yellow;
-  color: black;
+  background-color: blue;
+  color: white;
 }
 
 .weather{
@@ -136,8 +137,8 @@ h3{
 }
 
 .city{
-  background-color: yellow;
-  color: black;
+  background-color: blue;
+  color: white;
   font-weight: bold;
   font-size: 30px;
   display: inline-block;

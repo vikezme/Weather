@@ -63,3 +63,15 @@ const search= function (){
 document.querySelector(".btn-search").addEventListener("click", function() {
   search();
 });
+
+let cities = localStorage.getItem ("cities");
+document.querySelector('.inputvalue').innerHTML= cities;
+
+const history = document.getElementById("history");
+const inputvalue = document.getElementById("inputvalue");
+const btn-search = document.getElementById("btn-search");
+
+btn-search.onClick = function () {
+  const value = inputvalue.value;
+  console.log(value);
+}
