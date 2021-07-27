@@ -4,19 +4,25 @@ var name= document.querySelector('.name')
 var desc= document.querySelector('.desc')
 var temp= document.querySelector('.temp')
 
-button.addEventListener('click', function (){
-  fetch('http://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+"&units=metric"+'&appid=771f4017d6098f3a2d947ab695755dca')
+var searchedCities = [];
+
+function searchCity(city) {
+  fetch('http://api.openweathermap.org/data/2.5/weather?q='+city+"&units=metric"+'&appid=771f4017d6098f3a2d947ab695755dca')
 
   .then(response => response.json())
   .then(data => displayWeather(data))
 
   .catch(err => alert("Wrong City Name"))
-  fetch('http://api.openweathermap.org/data/2.5/forecast?q='+inputValue.value+"&units=metric"+'&appid=771f4017d6098f3a2d947ab695755dca')
+  fetch('http://api.openweathermap.org/data/2.5/forecast?q='+city+"&units=metric"+'&appid=771f4017d6098f3a2d947ab695755dca')
 
   .then(response => response.json())
   .then(data => displayForecast(data))
 
   console.log();
+}
+
+button.addEventListener('click', function (){
+  searchCity(inputValue.value);
 })
 
 
@@ -32,7 +38,7 @@ function showWeather(ref, data) {
 }
 
 
-const displayWeather= function(data) {
+const displayWeather= function(data, addHistory) {
   const { name } = data;
   const { icon, description } = data.weather[0];
   const { temp, humidity } = data.main;
@@ -44,7 +50,10 @@ const displayWeather= function(data) {
   document.querySelector(".description").innerText = description;
   document.querySelector(".weather").classList.remove("loading");
   showWeather(document.querySelector("#mainitem"), data);
-  document.getElementById("history").innerHTML += `${name} <br/>`; };
+  if(!searchedCities.includes(name)) {
+    document.getElementById("history").innerHTML += '<a href="javascript:searchCity(\''+encodeURIComponent(name)+'\')">'+name+'</a><br/>'; };
+    searchedCities.push(name);
+  }
 
 
   const displayForecast= function(data) {
@@ -63,22 +72,3 @@ const search= function (){
 document.querySelector(".btn-search").addEventListener("click", function() {
   search();
 });
-
-
-
-// const history = document.getElementById("history");
-// const inputvalue = document.getElementById("inputvalue");
-// const btnsearch = document.getElementById("btn-search");
-//
-// btnsearch.onclick = function () {
-//   const value = inputvalue.value;
-//   console.log(value);
-//
-//   if (value) {
-//     localStorage.setItem(value);
-//     location.reload();
-//   }
-// };
-// for (var i = 0; i < localStorage.length; i++) {
-//   const value = localStorage.getItem(value);
-// }
